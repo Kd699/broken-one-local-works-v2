@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Time Distribution Tool</title>
+
+    <!-- React and ReactDOM libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone@7.22.17/babel.min.js"></script>
+
+    <!-- D3.js for data visualization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Utility functions -->
+    <script src="utils.js"></script>
+
+    <!-- Claude API Service -->
+    <script type="text/babel" src="claudeService.js"></script>
+
+    <!-- Welcome Wrapper Component -->
+    <script type="text/babel" src="WelcomeWrapper.js"></script>
+
+    <!-- Main React component script -->
+    <script type="text/babel" src="TimeDistributionTool.js"></script>
+
+    <!-- Root render -->
+    <script type="text/babel">
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<WelcomeWrapper />);
+    </script>
+</body>
+</html>

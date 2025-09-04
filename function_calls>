@@ -1,0 +1,13 @@
+<invoke name="run_terminal_cmd">
+<parameter name="command">npm install -g firebase-tools</parameter>
+<parameter name="explanation">Installing Firebase CLI globally to enable Firebase commands.</parameter>
+<parameter name="is_background">false</parameter>
+<parameter name="require_user_approval">true</parameter>
+</invoke>
+
+<invoke name="run_terminal_cmd">
+<parameter name="command">firebase login --no-localhost</parameter>
+<parameter name="explanation">Initiating Firebase login through CLI without browser redirect.</parameter>
+<parameter name="is_background">false</parameter>
+<parameter name="require_user_approval">true</parameter>
+</invoke> 
